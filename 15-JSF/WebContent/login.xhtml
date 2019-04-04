@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	<title>Nova Pagina</title>
+</head>
+<body>
+<h:form>
+	<h:outputLabel></h:outputLabel>
+	<h:outputLabel value = "nome"/>
+	<h:inputText value="#{loginBean.nome}"/>
+
+	<h:outputLabel value="senha"/>
+	<h:inputText value="#{loginBean.senha}"/>
+	<h:commandButton value = "Entrar" actionListener="#{loginBean.validarLogin}"/>
+</h:form>
+
+
+</body>
+</html>

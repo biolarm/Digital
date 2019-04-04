@@ -93,6 +93,7 @@ public class EmpresaResource {
 			e.printStackTrace();
 			return Response.serverError().build(); // 500
 		}
+		
 		// Criar a URL para acessar a empresa cadastrada
 		UriBuilder builder = url.getAbsolutePathBuilder();
 		builder.path(String.valueOf(empresa.getCodigo()));
