@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Exercicio_Server" path="/Exercicio_Server" reloadable="true" source="org.eclipse.jst.jee.server:Exercicio_Server"/><Context docBase="14-WS-Exercicio1" path="/14-WS-Exercicio1" reloadable="true" source="org.eclipse.jst.jee.server:14-WS-Exercicio1"/><Context docBase="09-WS-Loja-Requester" path="/09-WS-Loja-Requester" reloadable="true" source="org.eclipse.jst.jee.server:09-WS-Loja-Requester"/><Context docBase="06-WS-Provider" path="/06-WS-Provider" reloadable="true" source="org.eclipse.jst.jee.server:06-WS-Provider"/><Context docBase="12-WS-Restful" path="/12-WS-Restful" reloadable="true" source="org.eclipse.jst.jee.server:12-WS-Restful"/><Context docBase="07-WS-Loja-Provider" path="/07-WS-Loja-Provider" reloadable="true" source="org.eclipse.jst.jee.server:07-WS-Loja-Provider"/><Context docBase="08-WS-Requester" path="/08-WS-Requester" reloadable="true" source="org.eclipse.jst.jee.server:08-WS-Requester"/><Context docBase="15-JSF" path="/15-JSF" reloadable="true" source="org.eclipse.jst.jee.server:15-JSF"/><Context docBase="16-JSF" path="/16-JSF" reloadable="true" source="org.eclipse.jst.jee.server:16-JSF"/></Host>
+      <Context docBase="17-JSF-Restful" path="/17-JSF-Restful" reloadable="true" source="org.eclipse.jst.jee.server:17-JSF-Restful"/><Context docBase="12-WS-Restful" path="/12-WS-Restful" reloadable="true" source="org.eclipse.jst.jee.server:12-WS-Restful"/></Host>
     </Engine>
   </Service>
 </Server>
