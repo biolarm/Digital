@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Ocorrencia</title>	
+	<h:outputStylesheet library="css" name="bootstrap.min.css"/>
+</h:head>
+
+<body>
+<div class="container">
+	<h2>Lista de Ocorrencia</h2>
+	
+	<h:messages styleClass="alert alert-success"/>
+	
+	<h:link outcome="Ocorrencia"> Cadastrar</h:link>
+	
+	<h:form>
+		<h2>Ocorrencia</h2>
+		<h:dataTable styleClass="table" value="#{ocorrenciaBean.listar()}" var="o">
+			<h:column>
+				<f:facet name="header">Codigo</f:facet>
+				#{o.codigo}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Data</f:facet>
+				<h:outputText value="#{o.data.time}">
+					<f:convertDateTime pattern="dd/MM/yyyy"/>
+				</h:outputText>
+				
+			</h:column>
+			<h:column>
+				<f:facet name="header">Denunciante</f:facet>
+				#{o.anonimo ? 'Anonimo' : o.denunciante }
+			</h:column>
+			<h:column>
+				<f:facet name="header">Descricao</f:facet>
+				#{o.descricao}
+			</h:column>
+			
+		</h:dataTable>
+	
+	</h:form>
+
+</div>
+</body>
+
+
+</html>
